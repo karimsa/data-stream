@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: k4rim.sa@gmail.com
+  api_key:
+    secure: cSo58ziwK+eVm2H6arM/Ypg/q+1vGgKW22QIl8eeDOvN3MFmxiTH8XvSfoWtVXRawcRN0aFEVEw0sVhC658VSjLGsvui+wbCO1l0dxMyNcF11u6L54ZnC9NwWYkpF9C5z8k04/xb52Lzf7FxTlUYznI3DjAml230W80nlBAzCHjfmEfRKo5C2KeXhQGcBrF8++JsMHAXwx8yt4Hot2rUakgCRDDhSPSPKqro9dhMwW7IReFJYBUW/8ImIl+zWj+Oj3ejy+cJArI9rmT6a3fDJLZuLeLLZbxiwwEQLoIZoBsUOaUsBjFpGvDTtf5Cq8lfZwzI8Z6V1/5jIXi3AR3OsPe96Xj5MocAnTBMQ/D0zfJfJMiNV4+UD2ef8ltLoxmtpK37Iy/Cn58qNjP0FRJAEFpSblfaDEb55AAvmijFDAn2FezsSgeLA4RWmNFOszfqQ8oJrj2XL5/sHpArBK3bQja7A035ng1Ckaby5esTKdspeKoh7pmItYpuIJrJu4y65jZz+42j1G9ZQHg8x1XcenIfqZxc2ai2nFecdzlZOw/k4fq64OPKWiQZYEndq2+rQcdV/r3No6ZXqZGUjIrw94WBNhP34HSryzo5qq7MICg4i+SCc9uWRF9gENLPYUxVrGsic00zNz1eWzmp73gbIbUyQfWz8FTQWQsijZM0rHU=
+  on:
+    tags: true
+    repo: karimsa/data-stream
