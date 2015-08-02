@@ -1,4 +1,4 @@
-# data-stream ![travis-ci build status](https://magnum.travis-ci.com/karimsa/pennyworth.svg?token=bynzkcTP4XciV8soPs5e&branch=master)
+# data-stream ![travis-ci build status](https://magnum.travis-ci.com/karimsa/data-stream.svg?token=bynzkcTP4XciV8soPs5e)
 
 powerful data manipulation with node.js streams.
 
