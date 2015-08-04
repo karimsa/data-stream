@@ -2,6 +2,8 @@
 
 powerful data manipulation with node.js streams.
 
+[![NPM](https://nodei.co/npm/data-stream.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/data-stream/)
+
 ## Usage
 
 To start using, install it into your project, create a new data-stream, apply your transforms, then treat as a regular stream:
