@@ -24,4 +24,4 @@ For the full API specification, please see [doc/index.md](doc/index.md).
 
 ## License
 
-Licensed under [GPL-3.0]().
+Licensed under [GPL-3.0](LICENSE.txt).

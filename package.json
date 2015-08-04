@@ -1,7 +1,7 @@
 {
   "name": "data-stream",
   "version": "0.0.1",
-  "description": "data-driven streams with processing tools",
+  "description": "powerful data manipulation with node.js streams.",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
