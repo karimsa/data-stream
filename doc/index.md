@@ -7,7 +7,7 @@ especially categorized. For example, a transform with the name
 
 ## General methods
 
- - `take(stream)`: use `stream` as input (reverse of pipe).
+ - `source(stream)`: use `stream` as input (reverse of pipe).
  - `and(stream)`: merge streams with `stream`.
  - `append(stream)`: add `stream` to the end of the stream line.
  - `clone()`: clone current data-stream into new stream.
