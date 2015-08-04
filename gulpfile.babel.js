@@ -8,13 +8,14 @@
 
 import gulp from 'gulp';
 import babel from 'gulp-babel';
+import mocha from 'gulp-mocha';
 import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import beautify from 'gulp-jsbeautifier';
 import sourcemaps from 'gulp-sourcemaps';
 
 gulp.task('beautify', () =>
-	gulp.src('lib/**/**.js')
+	gulp.src(['lib/**/**.js', 'test/test-*.js'])
 		.pipe(beautify({
 			js: {
 				jslintHappy: true
@@ -30,5 +31,11 @@ gulp.task('default', ['beautify'], () =>
 			.pipe(concat('index.js'))
 			.pipe(uglify())
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest(''))
+		.pipe(gulp.dest('.'))
+);
+
+gulp.task('test', ['default'], () =>
+	gulp.src('test/test-*.js')
+		.pipe(babel())
+		.pipe(mocha())
 );
