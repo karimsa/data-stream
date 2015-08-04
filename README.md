@@ -1,4 +1,4 @@
-# data-stream ![travis-ci build status](https://magnum.travis-ci.com/karimsa/data-stream.svg?token=bynzkcTP4XciV8soPs5e)
+# data-stream [![travis-ci build status](https://magnum.travis-ci.com/karimsa/data-stream.svg?token=bynzkcTP4XciV8soPs5e)](https://travis-ci.org/karimsa/data-stream)
 
 powerful data manipulation with node.js streams.
 
