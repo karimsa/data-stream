@@ -22,7 +22,10 @@ import 'mocha';
 import 'should';
 import data from '../';
 import through from 'through';
-import intercept from 'intercept-stdout';
+
+var intercept = (callback) => {
+    var pipe = process.stdout.pipe;
+};
 
 describe('utility transforms', () => {
     describe('.debounce()', () =>
@@ -123,7 +126,7 @@ describe('utility transforms', () => {
                 done();
             });
 
-            data().stdout().write('\0');
+            process.nextTick(() => data().stdout().write('\0'));
         });
 
         it('should output datums with newlines', (done) => {
@@ -135,7 +138,25 @@ describe('utility transforms', () => {
                     done();
                 });
 
-            stream.write('\0');
+            process.nextTick(() => stream.write('\0'));
         });
+    });
+
+    describe('.take()', () => {
+        it('should group 1, 2, 3, 4, and 5 as an array', () =>
+            data()
+            .take(5)
+            .forEach((buffer) => {
+                buffer.length.should.eql(5);
+                for (var i = 0; i < buffer.length; i += 1) {
+                    buffer[i].should.eql(i);
+                }
+            })
+            .write(1)
+            .write(2)
+            .write(3)
+            .write(4)
+            .write(5)
+        );
     });
 });
