@@ -2,7 +2,9 @@
 
 powerful data manipulation with node.js streams.
 
-***Note:** Install with 'npm install data**_**stream because data-stream was already taken.*
+***DISCLAIMER:*** *This was a project I started a while ago but never got around to finishing but decided to upload it anyways in case anyone else is interested in it. Enjoy!*
+
+***Note:*** *Install with 'npm install data_stream because data-stream was already taken.*
 
 [![NPM](https://nodei.co/npm/data_stream.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/data_stream/)
 
