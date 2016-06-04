@@ -2,7 +2,9 @@
 
 powerful data manipulation with node.js streams.
 
-[![NPM](https://nodei.co/npm/data-stream.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/data-stream/)
+***Note:** Install with 'npm install data**_**stream because data-stream was already taken.*
+
+[![NPM](https://nodei.co/npm/data_stream.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/data_stream/)
 
 ## Usage
 

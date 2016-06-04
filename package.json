@@ -1,5 +1,5 @@
 {
-  "name": "data-stream",
+  "name": "data_stream",
   "version": "0.0.1",
   "description": "powerful data manipulation with node.js streams.",
   "main": "index.js",
